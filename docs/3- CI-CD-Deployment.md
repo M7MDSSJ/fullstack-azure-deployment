@@ -52,7 +52,7 @@ Secrets used include:
 
 📸 **Example Run Screenshot:**
 
-![Booking Workflow Run](../screenshots/booking-workflow.png)
+![Booking Workflow Run](/screenshots/repo1-cicd.jpg)
 
 ---
 
@@ -72,7 +72,7 @@ Secrets used include:
 
 📸 **Example Run Screenshot:**
 
-![Chatbot Workflow Run](../screenshots/chatbot-workflow.png)
+![Chatbot Workflow Run](/screenshots/repo2-cicd.jpg)
 
 ---
 
