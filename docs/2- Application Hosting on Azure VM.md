@@ -16,7 +16,7 @@ This section describes how the backend applications are deployed and hosted on a
 ✅ **VM Configuration (Azure Portal)**  
 Shows the VM type, region, public IP, and networking details.
 
-![VM Config](../screenshots/vm-config.png)
+![VM Config](/screenshots/vm-properties.jpg)
 
 ---
 
@@ -42,7 +42,7 @@ Shows the VM type, region, public IP, and networking details.
 
 ---
 ### PM2 status & Apps' ports
-![DuckDNS Config](../screenshots/duckdns-config.png)
+![Apps status and ports](/screenshots/pm2-status-ports.png)
 
 ---
 ## 🌐 **Domain Name Setup (DuckDNS)**
