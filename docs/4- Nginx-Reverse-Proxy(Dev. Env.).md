@@ -20,8 +20,8 @@ Each backend app is mapped to its own domain:
 
 | Application         | Domain URL                                   | Port  |
 |---------------------|----------------------------------------------|-------|
-| Booking Application | [https://sky-shifters.duckdns.org/](https://sky-shifters.duckdns.org/) | 3000  |
-| Chatbot Application | [https://chatbot-sky-shifters.duckdns.org/](https://chatbot-sky-shifters.duckdns.org/) | 8001  |
+| Booking Application | [sky-shifters.duckdns.org/](https://sky-shifters.duckdns.org/) | 3000  |
+| Chatbot Application | [chatbot-sky-shifters.duckdns.org/](https://chatbot-sky-shifters.duckdns.org/) | 8001  |
 
 ✅ Requests arriving at each domain are forwarded internally by NGINX to the appropriate port.
 
@@ -34,7 +34,9 @@ Each backend app is mapped to its own domain:
    - The `server_name` (domain).
    - Proxy settings to forward traffic to the local port.
    - SSL directives for HTTPS.
+
 3️⃣ Issued free SSL certificates using **Certbot Let’s Encrypt**.
+
 4️⃣ Reloaded NGINX to apply changes.
 
 ---
