@@ -99,7 +99,10 @@ EOF
 ```
 This .env file is then used by the Python application during runtime.
 
-✅ Benefits of This Setup
+----
+
+## ✅ Benefits of This Setup
+
 🔄 Fully automated deployment triggered by a simple git push.
 
 🛡️ Secrets are managed securely and not exposed in code.
