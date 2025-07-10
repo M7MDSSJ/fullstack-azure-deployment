@@ -17,7 +17,7 @@ This produces the final static files:
 ✅ **Example Build Files in Blob Container:**  
 The final build files are uploaded to a dedicated **Blob Storage container**.
 
-![Frontend Files in Blob Container](../screenshots/blob-storage-files.png)
+![Frontend Files in Blob Container](/screenshots/container-content.png)
 
 ---
 
@@ -32,7 +32,7 @@ In the Azure Blob Storage account:
 The live frontend for this project is accessible at:  
 [https://taier.z6.web.core.windows.net/](https://taier.z6.web.core.windows.net/)
 
-![Blob Storage Endpoint](../screenshots/blob-storage-endpoint.png)
+![Blob Storage Endpoint](/screenshots/endpoint.png)
 
 ---
 
