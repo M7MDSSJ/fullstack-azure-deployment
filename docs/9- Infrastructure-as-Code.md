@@ -3,8 +3,8 @@
 To keep the production environment **repeatable** and **easy to rebuild**, the whole Azure setup was exported and organized as **Infrastructure as Code (IaC)**.
 
 In this project:
-- All core resources (**VM, Application Gateway, Blob Storage, VNet, Subnets, NSGs**) are defined as code.
-- This means the same setup can be deployed again anytime without manual clicks in the Azure Portal.
+- All main resources (**VM, Application Gateway, Blob Storage, VNet, Subnets, NSGs**) are defined as code.
+- This means the same environment can be deployed again anytime without manual clicks in the Azure Portal.
 - The IaC files are versioned in the repo, so any change is tracked, and the team can collaborate on infra updates.
 
 ---
@@ -18,14 +18,31 @@ In this project:
 
 ---
 
-## 📁 Example Resources Covered
+## 🧩 **How I Exported the Infrastructure**
 
-- **Virtual Network & Subnets**: To isolate traffic between AGW and the VM.
-- **NSGs**: To control allowed ports for AGW and backend.
-- **Application Gateway**: Includes multi-site config and SSL cert bindings.
-- **Blob Storage**: For static website hosting.
-- **VM**: Runs backend apps with PM2.
+To generate the full Infrastructure as Code template for this project, the following steps were done:
+
+1️⃣ **Install Azure CLI**  
+   - Download & install: [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+
+2️⃣ **Login to your Azure account**  
+   ```bash
+    az login
+```
+3️⃣ Export the entire Resource Group to a template file
+   ```bash
+    az group export --name GradServer > fullTemplate.json
+```
+- Replace GradServer with your Resource Group name.
 
 ---
+## 📁 Example Resources Covered
+- Virtual Network & Subnets: To isolate traffic between AGW and the VM.
 
-_This keeps the full cloud deployment clear, trackable, and easy to redeploy._ 🚀
+- NSGs: To control allowed ports for AGW and backend.
+
+- Application Gateway: With multi-site config and SSL cert bindings.
+
+- Blob Storage: For static website hosting.
+
+- VM: Runs backend apps with PM2.
