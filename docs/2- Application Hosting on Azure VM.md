@@ -28,15 +28,7 @@ Shows the VM type, region, public IP, and networking details.
 - **Port:** `3000`
 - **Role:** Handles all booking-related operations including flight search, reservations, and transaction processing.
 
-✅ **PM2 Status (Booking App)**  
-Shows the Booking App running under PM2.
 
-![PM2 Booking](../screenshots/pm2-booking.png)
-
-✅ **Listening Port**  
-Confirms the Booking App listens on port `3000`.
-
-![Booking Port](../screenshots/booking-port.png)
 
 ---
 
@@ -46,18 +38,13 @@ Confirms the Booking App listens on port `3000`.
 - **Port:** `8001`
 - **Role:** Provides AI-powered customer support and assists users with booking management through natural language conversation.
 
-✅ **PM2 Status (Chatbot App)**  
-Shows the Chatbot App running under PM2.
 
-![PM2 Chatbot](../screenshots/pm2-chatbot.png)
-
-✅ **Listening Port**  
-Confirms the Chatbot App listens on port `8001`.
-
-![Chatbot Port](../screenshots/chatbot-port.png)
 
 ---
+### PM2 status & Apps' ports
+![DuckDNS Config](../screenshots/duckdns-config.png)
 
+---
 ## 🌐 **Domain Name Setup (DuckDNS)**
 
 To make the backend services accessible and easily routable, we configured **DuckDNS**:
@@ -65,16 +52,12 @@ To make the backend services accessible and easily routable, we configured **Duc
 - Used later in **Application Gateway** multi-site routing to direct requests based on the requested service.
 - Allows the frontend to request backend APIs using these custom subdomains.
 
-✅ **DuckDNS Configuration Example**
-
-![DuckDNS Config](../screenshots/duckdns-config.png)
-
 ---
 
 ## 🔗 **Next**
 
 👉 This backend hosting setup works in tandem with:
-- The **Nginx Reverse Proxy** configuration on the VM *(if applicable)*.
+- The **Nginx Reverse Proxy** configuration on the VM *(Previously in Dev. Env.)*.
 - The **Application Gateway Reverse Proxy** for secure multi-site SSL termination and routing.
 - The **CI/CD pipelines** that automatically deploy code updates to the VM.
 
