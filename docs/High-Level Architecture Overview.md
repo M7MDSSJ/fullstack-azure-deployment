@@ -47,20 +47,7 @@ The system uses **Azure built-in monitoring** and **activity logs** for full vis
 
 Below is the high-level architecture diagram that visualizes the flow described above.
 
-![Architecture Diagram](./diagrams/architecture-overview.png)
-
-> **Tip:** Replace `architecture-overview.png` with your final diagram file name. Make sure it clearly shows:
-> - Clients
-> - Application Gateway
-> - SSL Termination
-> - Health Probe
-> - Backend Pools → VMs
-> - Static Blob Storage
-> - VNets, Subnets, NSGs
-> - CI/CD Pipelines flow
-> - Monitoring and Alerts
-
----
+![Architecture Diagram](/diagrams/architecture-overview.png)
 
 ## ✅ **Key Components**
 
