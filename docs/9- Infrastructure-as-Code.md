@@ -1,47 +1,31 @@
 # 🏗️ Infrastructure as Code (IaC)
 
-To ensure that the entire production environment is **repeatable**, **scalable**, and **easy to manage**, the team implemented the **Infrastructure as Code (IaC)** approach.
+To keep the production environment **repeatable** and **easy to rebuild**, the whole Azure setup was exported and organized as **Infrastructure as Code (IaC)**.
 
-With IaC:
-- All cloud resources — including **Virtual Machines**, **Application Gateway**, **Blob Storage**, **Network Security Groups (NSGs)**, **Virtual Networks (VNets)**, and **Subnets** — are defined and managed through **code files** instead of manual configurations in the Azure Portal.
-
----
-
-## ✅ **How IaC Helps**
-
-### 1️⃣ **Consistency & Repeatability**
-- Every configuration is written in code, ensuring that deploying a new environment always produces the **same result**.
-- Reduces human error and eliminates configuration drift between environments.
+In this project:
+- All core resources (**VM, Application Gateway, Blob Storage, VNet, Subnets, NSGs**) are defined as code.
+- This means the same setup can be deployed again anytime without manual clicks in the Azure Portal.
+- The IaC files are versioned in the repo, so any change is tracked, and the team can collaborate on infra updates.
 
 ---
 
-### 2️⃣ **Easy Redeployment & Scaling**
-- If the team needs to rebuild the entire infrastructure in a new region or for a new customer, it’s **just one command away**.
-- Adding new resources or updating existing configurations is simple and fully tracked in **version control**.
+## ✅ How It Fits This Project
+
+- 🗂️ If the platform needs to run in a **new region**, it’s just `az deployment` (or `terraform apply`).
+- ⚙️ When adding new services or scaling, infra changes stay **consistent** with no manual drift.
+- 🔐 The code is stored under:  
+  [`deployment-scripts/azure-iac/`](../deployment-scripts/azure-iac/)
 
 ---
 
-### 3️⃣ **Better Collaboration**
-- The IaC files are stored in a **dedicated GitHub repository**, allowing the DevOps team to **collaborate** on infrastructure changes just like application code.
-- All changes can be peer-reviewed through pull requests and rollbacks are quick if needed.
+## 📁 Example Resources Covered
+
+- **Virtual Network & Subnets**: To isolate traffic between AGW and the VM.
+- **NSGs**: To control allowed ports for AGW and backend.
+- **Application Gateway**: Includes multi-site config and SSL cert bindings.
+- **Blob Storage**: For static website hosting.
+- **VM**: Runs backend apps with PM2.
 
 ---
 
-## 📁 **Where to Find the Code**
-
-The complete Infrastructure as Code files are available here:
-[`deployment-scripts/azure-iac/main.bicep`](../deployment-scripts/azure-iac/main.bicep) *(or main.tf if using Terraform)*
-
----
-
-## 🛡️ **Benefits Achieved**
-
-✔ **Same infrastructure every time.**  
-✔ **Faster disaster recovery and testing new regions.**  
-✔ **Secure, versioned, and documented.**
-
----
-
-_For more details on the resulting architecture, see [High-Level Architecture](./ARCHITECTURE.md)._  
-_For network and security best practices, see [Networking & Security](./Network-Security.md)._
-
+_This keeps the full cloud deployment clear, trackable, and easy to redeploy._ 🚀
