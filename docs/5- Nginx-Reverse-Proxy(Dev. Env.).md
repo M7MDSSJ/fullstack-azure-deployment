@@ -47,8 +47,7 @@ Each backend app is mapped to its own domain:
 - Ensured HTTPS connections for secure data transmission even during development.
 - This helped mimic the final production security flow.
 
-✅ Example:  
-![Certbot Success](../screenshots/certbot-success.png)
+
 
 ---
 
@@ -67,13 +66,11 @@ Check these files for:
 
 ## 📸 **Verification Screenshots**
 
-- ✅ **Nginx Running on VM:** Shows config file structure.  
-  ![Nginx Config](../screenshots/nginx-config.png)
+- ✅ **Nginx Configurations for booking app:**  
+  ![Nginx Config](/screenshots/nginx-booking.png)
 
-- ✅ **PM2 Processes:** Confirms backend apps are running on the correct ports.  
-  ![PM2 Status](../screenshots/pm2-status.png)
-
-- ✅ **Domains Accessible Over HTTPS:** Booking & Chatbot accessible via DuckDNS.
+- ✅ **Nginx Configurations for chatbot app:**  
+  ![Nginx Config](/screenshots/nginx-chatbot.png)
 
 ---
 
@@ -84,7 +81,8 @@ In the **production environment**, the role of SSL termination and routing was m
 - Multi-site configuration for multiple domains.
 - Health probes and backend pools.
 - Secure, scalable reverse proxy.
-
+  
+![Nginx vs AGW](/diagrams/nginx-vs-agw.png)
 ---
 
 ## ✅ **Key Takeaways**
@@ -97,6 +95,6 @@ In the **production environment**, the role of SSL termination and routing was m
 
 ---
 
-👉 For full production gateway details, see the dedicated doc: [Application Gateway Reverse Proxy](./Application-Gateway.md).
+👉 For full production gateway details, see the dedicated doc: [Application Gateway](./Application-Gateway.md).
 
 ---
