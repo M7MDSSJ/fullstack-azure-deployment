@@ -15,7 +15,7 @@ In this project:
 - 🗂️ If the platform needs to run in a **new region**, it’s just `az deployment` (or `terraform apply`).
 - ⚙️ When adding new services or scaling, infra changes stay **consistent** with no manual drift.
 - 🔐 The code is stored under:  
-  [`deployment-scripts/azure-iac/`](../deployment-scripts/azure-iac/)
+  [`deployment-scripts/azure-iac/`](../deployment-scripts/azure-iac.json/)
 
 ---
 
