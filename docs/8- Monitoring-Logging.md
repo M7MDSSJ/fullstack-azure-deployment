@@ -21,10 +21,10 @@ This project uses a combination of **Azure’s built-in tools**:
 - Perform root cause analysis for configuration changes or errors.
 - Support audit trails for security and compliance.
 
-✅ **Example: VM Activity Log**  
+✅ **Example: Application Gateway Activity Log**  
 Provides detailed logs if the VM restarts, stops, or its configuration changes.
 
-![Activity Log - VM](../screenshots/activity-log-vm.png)
+![Activity Log - AGW](../screenshots/activity-log.png)
 
 ---
 
@@ -47,7 +47,8 @@ Metrics tracked for the VM include:
 - **VM Availability:** Confirms that the VM stays online.
 
 ✅ **Example: VM Metrics Dashboard**  
-![VM Monitoring](../screenshots/vm-monitoring.png)
+![VM Monitoring](../screenshots/vm-monitor-1.png)
+![VM Monitoring](../screenshots/vm-monitor-2.png)
 
 ---
 
@@ -59,7 +60,7 @@ Metrics tracked for the AGW include:
 - **Latency:** Time taken to process requests.
 
 ✅ **Example: Application Gateway Metrics**  
-![App Gateway Monitoring](../screenshots/appgw-monitoring.png)
+![App Gateway Monitoring](../screenshots/agw-monitor.png)
 
 ---
 
@@ -77,16 +78,35 @@ Metrics tracked for the AGW include:
   - If the Health Probe detects that either the Booking or Chatbot app is unhealthy, an alert is triggered.
   - A notification is immediately sent to the team via **Gmail** for quick response.
 
+
+✅ **Alert Rule in Azure Portal**  
+![Azure Alerts Config](../screenshots/alerts-config.png)
+
+---
+
 ✅ **Example Scenario:**
+
 1️⃣ Stop the chatbot app on the VM.  
-2️⃣ Check the Application Gateway’s Monitoring tab.  
+
+![Stopped Chatbot App](../screenshots/stopped-chatbot.png)
+
+---
+
+2️⃣ Check the Application Gateway’s Monitoring tab  
+
+![Unhealthy Chatbot App](../screenshots/unhealthy-chatbot.png)
+
+---
+
 3️⃣ An email notification is automatically sent to your personal Gmail inbox.
 
-✅ **Example: Alert Rule in Azure Portal**  
-![Azure Alerts Config](../screenshots/azure-alerts.png)
 
-✅ **Example: Email Notification**  
-![Azure Alert Email](../screenshots/alert-email.png)
+✅ **Fired Email Notification**  
+![Azure Alert Email](../screenshots/fired-alert.png)
+
+
+✅ **Resolved Email Notification**  
+![Azure Alert Email](../screenshots/resolved-alert.png)
 
 ---
 
@@ -106,9 +126,3 @@ Metrics tracked for the AGW include:
 
 ---
 
-## ✅ Next Steps
-
-👉 For how health probes are integrated with the AGW, see [Application Gateway Reverse Proxy](./Application-Gateway.md).  
-👉 For the VM setup and deployment pipeline, see [Application Hosting](./Application-Hosting.md) and [CI/CD](./CI-CD-Deployment.md).
-
----
