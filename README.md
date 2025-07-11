@@ -1,4 +1,4 @@
-# ✈️ Full-Stack Application Cloud Deployment Using Azure
+# ☁️ Full-Stack Application Cloud Deployment Using Azure
 
 This repository documents the **end-to-end production deployment** of the Smart Travel Booking Platform — a full-stack project running on **Azure Cloud**, with everything from VM hosting, static frontend, reverse proxies, CI/CD pipelines, secure networking, and Infrastructure as Code.
 
@@ -62,16 +62,16 @@ Below is the high-level architecture diagram that visualizes the flow described 
 
 ## 🗂️ **Documentation**
 
-🔗 [🗺️ Architecture Overview](./docs/ARCHITECTURE.md)  
-🔗 [🖥️ Application Hosting](./docs/Application-Hosting.md)  
-🔗 [📦 Static Frontend Hosting](./docs/Static-Frontend-Hosting.md)  
-🔗 [🔄 Nginx Reverse Proxy (Dev)](./docs/Nginx-Reverse-Proxy.md)  
-🔗 [☁️ Application Gateway Reverse Proxy](./docs/Application-Gateway.md)  
-🔗 [🔐 Networking & Security](./docs/Network-Security.md)  
-🔗 [📊 Monitoring & Logging](./docs/Monitoring-Logging.md)  
-🔗 [🏗️ Infrastructure as Code (IaC)](./docs/Infrastructure-as-Code.md)  
-🔗 [💰 Cost Estimation](./docs/Cost-Estimation.md)  
-🔗 [🚀 CI/CD Deployment](./docs/CI-CD-Deployment.md)
+🔗 [🗺️ High-Level Architecture Overview](./docs/1-%20High-Level%20Architecture%20Overview.md)  
+🔗 [🖥️ Application Hosting on Azure VM](./docs/2-%20Application%20Hosting%20on%20Azure%20VM.md)
+🔗 [🚀 🚀 CI/CD Pipelines for Backend Applications](./docs/3-%20CI-CD-Deployment.md)
+🔗 [📦 Static Frontend Hosting using Azure Blob Storage](./docs/4-%20Static-Frontend-Hosting.md)  
+🔗 [🔄 Nginx Reverse Proxy on Azure VM (Development Phase)](./docs/5-%20Nginx%20Reverse%20Proxy%20(Dev.%20Env.).md)  
+🔗 [☁️ Application Gateway Reverse Proxy](./docs/6-%20Application%20Gateway%20(Prod.%20Env).md)  
+🔗 [🔐 Networking & Security](./docs/7-%20Network%20Security.md)  
+🔗 [📊 Monitoring & Logging](./docs/8-%20Monitoring%20&%20Logging.md)  
+🔗 [🏗️ Infrastructure as Code (IaC)](./docs/9-%20Infrastructure%20as$20Code.md)  
+🔗 [💰 Cost Estimation](./docs/Cost%20Estimation.md)  
 
 ---
 
