@@ -22,8 +22,15 @@ The cost estimation covers:
 
 These estimates are based on the deployed VM size, AGW configuration, storage used, and typical inbound/outbound data usage for the expected load.
 
-✅ **Example Cost Breakdown:**  
-![Cost Screenshot](../screenshots/azure-cost.png)
+✅ **Daily Cost :**  
+
+![Cost Screenshot](../screenshots/daily-cost.png)
+
+---
+
+✅ **Cost by service :**
+
+![Cost Screenshot](../screenshots/cost-by-service.png)
 
 ---
 
