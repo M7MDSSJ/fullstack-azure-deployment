@@ -38,8 +38,8 @@ The VNet is divided into **two subnets** to separate roles and security scopes:
   - Isolated from direct internet access.
   - Accepts only specific traffic from the Application Gateway and trusted CI/CD pipelines.
 
-✅ **Example Subnets Screenshot:**  
-![VNet & Subnets](../screenshots/vnet-subnets.png)
+✅ **Netwrking archirecture:**  
+![VNet & Subnets](../diagrams/app-networking.png)
 
 ---
 
@@ -58,7 +58,7 @@ Each subnet is protected by an **NSG** that enforces strict **Inbound** and **Ou
   - All other inbound ports by default.
 
 ✅ **appgw-subnet NSG Example:**  
-![AppGW NSG](../screenshots/appgw-nsg.png)
+![AppGW NSG](../screenshots/agw-nsg.png)
 
 ---
 
@@ -72,7 +72,7 @@ Each subnet is protected by an **NSG** that enforces strict **Inbound** and **Ou
   - All other inbound sources to protect the backend server from direct exposure.
 
 ✅ **default subnet NSG Example:**  
-![Default NSG](../screenshots/default-nsg.png)
+![Default NSG](../screenshots/server-nsg.png)
 
 ---
 
@@ -91,8 +91,6 @@ Each subnet is protected by an **NSG** that enforces strict **Inbound** and **Ou
 **SSH Connections for CI/CD**  
 - Allowed only for trusted GitHub Actions pipelines to access the VM for deployments.
 
-✅ **Traffic Flow Diagram:**  
-![Network Flow](../diagrams/network-flow.png)
 
 ---
 
