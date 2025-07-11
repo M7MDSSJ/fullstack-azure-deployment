@@ -7,6 +7,7 @@ In this project:
 - This means the same environment can be deployed again anytime without manual clicks in the Azure Portal.
 - The IaC files are versioned in the repo, so any change is tracked, and the team can collaborate on infra updates.
 
+![IaC](../diagrams/IaC.png)
 ---
 
 ## ✅ How It Fits This Project
