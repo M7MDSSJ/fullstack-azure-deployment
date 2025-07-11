@@ -1,4 +1,4 @@
-# ✈️ Smart Travel Cloud Deployment
+# ✈️ Full-Stack Application Cloud Deployment Using Azure
 
 This repository documents the **end-to-end production deployment** of the Smart Travel Booking Platform — a full-stack project running on **Azure Cloud**, with everything from VM hosting, static frontend, reverse proxies, CI/CD pipelines, secure networking, and Infrastructure as Code.
 
