@@ -19,6 +19,17 @@ This repo includes:
 
 ---
 
+
+## 🗺️ **Architecture Diagram**
+
+Below is the high-level architecture diagram that visualizes the flow described above.
+
+![Architecture Diagram](/diagrams/architecture-overview.png)
+
+> **Note:** A more detailed breakdown of configurations, scripts, and any supporting screenshots is documented separately in their dedicated sections.
+
+---
+
 ## 🗺️ **Project Overview**
 
 - **Platform:** Full-stack Smart Travel Booking System (Booking + Chatbot).
