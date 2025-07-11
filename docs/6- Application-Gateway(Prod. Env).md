@@ -14,6 +14,8 @@ This transition provided advanced **Layer 7 load balancing**, centralized **SSL 
 - ✅ Integrated **health probes** and **monitoring** for improved reliability.
 - ✅ Simplifies scaling and management compared to maintaining NGINX manually.
 
+  ![Nginx vs AGW](/diagrams/nginx-vs-agw.png)
+
 ---
 
 ## 🔐 **SSL Certificates**
@@ -22,7 +24,7 @@ This transition provided advanced **Layer 7 load balancing**, centralized **SSL 
 - This enables **SSL termination at the gateway level**: incoming HTTPS traffic is decrypted by the AGW, then forwarded to the backend VM over **HTTP** within the secure virtual network.
 
 ✅ **Example SSL Certificates in AGW:**  
-![SSL Certificates](../screenshots/agw-ssl-certs.png)
+![SSL Certificates](/screenshots/agw-ssl-certs.png)
 
 ---
 
@@ -76,7 +78,7 @@ The Application Gateway was configured in **multi-site mode** to route requests 
 - Each pool maps the domain to the correct port.
 
 ✅ **Backend Pools Example:**  
-![AGW Backend Pools](../screenshots/agw-backend-pools.png)
+![AGW Backend Pools](../screenshots/agw-backendpools.png)
 
 ---
 
@@ -108,7 +110,7 @@ Here’s the full flow from user to backend and back:
 6️⃣ The backend app processes the request and returns the response back through the same secure path.
 
 ✅ **Production Flow Diagram:**  
-![AGW Flow Diagram](../diagrams/agw-flow-diagram.png)
+![AGW Flow Diagram](../diagrams/agw-flow.png)
 
 ---
 
@@ -122,17 +124,6 @@ Here’s the full flow from user to backend and back:
 
 ---
 
-## 📁 **References**
-
-- SSL Certificates stored and managed directly on AGW.
-- All listeners, rules, pools, and probes configured via Azure Portal.
-- VM remains focused on backend processing only.
-
----
-
 _This production-grade reverse proxy setup ensures high availability, security, and scalability for the entire platform._ 🚀
-
-👉 For more details on the backend hosting, see [Application Hosting](./Application-Hosting.md).  
-👉 For how health monitoring works, see [Monitoring & Logging](./Monitoring-Logging.md).
 
 ---
