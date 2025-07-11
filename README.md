@@ -62,9 +62,9 @@ Below is the high-level architecture diagram that visualizes the flow described 
 
 ## 🗂️ **Documentation**
 
-🔗 [🗺️ High-Level Architecture Overview](./docs/1-%20High-Level%20Architecture%20Overview.md)  
-🔗 [🖥️ Application Hosting on Azure VM](./docs/2-%20Application%20Hosting%20on%20Azure%20VM.md)
-🔗 [🚀 🚀 CI/CD Pipelines for Backend Applications](./docs/3-%20CI-CD-Deployment.md)
+🔗 [🗺️ High-Level Architecture Overview](./docs/1-%20High-Level%20Architecture%20Overview.md)      
+🔗 [🖥️ Application Hosting on Azure VM](./docs/2-%20Application%20Hosting%20on%20Azure%20VM.md)    
+🔗 [🚀 CI/CD Pipelines for Backend Applications](./docs/3-%20CI-CD-Deployment.md)    
 🔗 [📦 Static Frontend Hosting using Azure Blob Storage](./docs/4-%20Static-Frontend-Hosting.md)  
 🔗 [🔄 Nginx Reverse Proxy on Azure VM (Development Phase)](./docs/5-%20Nginx%20Reverse%20Proxy%20(Dev.%20Env.).md)  
 🔗 [☁️ Application Gateway Reverse Proxy](./docs/6-%20Application%20Gateway%20(Prod.%20Env).md)  
